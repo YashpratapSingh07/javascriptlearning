@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Understand The setInterval and clearInterval</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    let intervalid;
+    const st = function(){
+        console.log("Yash Thakur");
+    }
+        document.querySelector('#start').addEventListener('click',function(){
+            console.log("Start");
+            intervalid=setInterval(st,2000);
+           
+        })
+          document.querySelector('#stop').addEventListener('click',function(){
+            console.log('Stopped');
+           clearInterval(intervalid);            
+        })
+        
+</script>
+</html>
